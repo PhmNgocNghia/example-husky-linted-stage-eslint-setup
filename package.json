@@ -9,8 +9,11 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint:fix && npm run lint"
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    ".js": "echo abc"
   },
   "author": "",
   "license": "ISC"
